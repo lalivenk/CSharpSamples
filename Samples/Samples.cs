@@ -22,7 +22,7 @@ namespace Samples
                 return;
             }
             
-            Console.WriteLine($"\nFizz Buzz for numbers up to {n}");
+            Console.WriteLine($"\nFizz Buzz for numbers up to (inclusive) {n}");
             for (int i = 2; i <= n; i++)
             {
                 if (i % 15 == 0)
@@ -48,13 +48,14 @@ namespace Samples
         public static void Main()
         {
             Samples samples = new Samples();
-            
+
             // To test invalid argument
             //samples.FizzBuzz(-1);
 
-            //For boundary testing
             //samples.FizzBuzz(0);
             //samples.FizzBuzz(3);
+            //samples.FizzBuzz(5);
+            //samples.FizzBuzz(15);
 
             samples.FizzBuzz(40);
 
